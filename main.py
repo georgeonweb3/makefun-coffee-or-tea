@@ -26,6 +26,11 @@ def main() -> None:
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8", newline="") as f:
         f.write(ENTRY_TEXT)
+    # Read-back verification: the file on disk must be byte-for-byte the
+    # single letter, so a stray newline or encoding slip can never reach
+    # the judge. This is the same 1-character gate the sealed scorer runs.
+    with open("/output/entry.txt", "rb") as f:
+        assert f.read() == ENTRY_TEXT.encode("utf-8")
 
 
 if __name__ == "__main__":
