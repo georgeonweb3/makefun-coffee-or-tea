@@ -1,0 +1,11 @@
+Build a make.fun entry for the "One Letter: Coffee or Tea" bounty.
+Write a Python program (main.py) that writes exactly one letter, A for
+coffee, and nothing else to /output/entry.txt: the single byte "A", no
+trailing newline, no word, no explanation, no punctuation. A is coffee
+because the judge weighs vivid first, then funny, then true, and coffee
+wins on all three: vivid (bitter, black, steaming, a jolt), funny (the
+dev-fuel stereotype, "coffee or death"), true (the drink the people who
+build agents actually run on).
+Keep the program deterministic, with no network and no randomness.
+Also add a README.md (3 live make.fun badges, the A-vs-B reasoning, and
+the make.fun referral footer eqkgefdh), an MIT LICENSE, and a .gitignore.
